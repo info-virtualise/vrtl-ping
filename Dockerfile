@@ -2,7 +2,7 @@ FROM microsoft/dotnet:latest
 COPY src /app
 WORKDIR /app
 RUN ["dotnet", "restore"]
-WORKDIR /app/RedisGeo
+WORKDIR /app/Vrtl.Ping.Host
 RUN ["dotnet", "build"]
 EXPOSE 5000/tcp
 ENV ASPNETCORE_URLS https://*:5000
